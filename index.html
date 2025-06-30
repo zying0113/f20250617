@@ -4,15 +4,155 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <meta name="description" content="This is a description of the page" />
+        <!-- <meta name = "keywords" content="HTML, CSS, JavaScript"> -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="images/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="images/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="images/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="images/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="images/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="images/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="images/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="images/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="images/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <style>
+            .profile {
+                width: 100%;
+                min-height: 300px;
+                padding: 10px;
+                border: 1px solid #000;
+                border-radius: 10px;
+            }
+
+            .box {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                background-color: #fb7878;
+                padding: 10px;
+            }
+
+            .box > div {
+                padding: 10px;
+                background-color: #2b9ade;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 300px;
+            }
+
+            .block {
+                padding: 10px;
+                background-color: #2b9ade;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 200px;
+                margin-top: 10px;
+            }
+
+            .first-name {
+                font-size: 40px;
+            }
+
+            .item {
+                background-color: #fb7878;
+            }
+
+            .mark {
+                font-size: 40px;
+            }
+        </style>
     </head>
     <body>
         <h1>Hello World</h1>
-        <div>
-            <h2>Hello World</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
-            </p>
+        <!-- display: block -->
+        <div>區塊標簽1</div>
+        <div>區塊標簽2</div>
+        <!-- display: inline -->
+        <span> 行內標簽1 </span>
+        <span> 行內標簽2 </span>
+
+        <!-- div 畫分區塊位置 -->
+        <!-- span 針對個別內容進行修飾 -->
+        <div class="profile">
+            <div class="box">
+                <div><span class="first-name">我</span>的名字</div>
+                <div>2</div>
+            </div>
+            <div class="block">3</div>
+            <div class="block">4</div>
         </div>
+        <hr />
+        <h6>Hello World h6<span class="mark">大文字</span></h6>
     </body>
 </html>
